@@ -1,0 +1,338 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color:darkcyan;
+    color:black;
+    padding: 20px;
+    width: 100%
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buychicken-links a{
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    margin: 2em;
+}
+
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    color:aliceblue;
+}
+
+/*--------------index html page------------------------*/
+
+.content-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 0 0 10px #62c0ff5a;
+    margin: 5em;
+}
+
+.content-container .content{
+    margin-right: 2em;
+    padding: 2em;
+}
+
+.content-container .content h2{
+    color:darkcyan;
+    margin-top: 0;
+    text-align: center;
+    padding: 1em;
+}
+
+.content-container .content h{
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.content-container .image{
+    padding: 1em;
+    margin: auto;
+}
+
+.content-container .image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.need-adoption{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2em;
+    padding: 4em;
+    margin: 4em;
+    background-color: darkslategrey;
+}
+
+.need-adoption::before{
+    content:"";
+    background-image: url(/images/images.png);
+    background-size: contain;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.pet-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 4em;
+    padding: 20px;
+    margin: 4em;
+}
+
+.animal-card img{
+    width: 400px;
+    height: 500px;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.animal-card{
+    width: 500px;
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #62c0ff5a;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.animal-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.5;
+}
+
+.animal-details h2{
+    text-align:  center;
+    padding-bottom: 0.5em;
+}
+
+/*-----------------buy page---------------------*/
+
+.adoption-container{
+    max-width: 70%;
+    margin: 5em auto;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #62c0ff5a;
+}
+
+.adoption-container p, .adoption-container ul{
+    font-size: 1.2em;
+}
+
+.adoption-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.adopt-info{
+    padding: 1em;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.adopt-info .image {
+    padding: 3em;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.adopt-info .image img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.adoption-form{
+    padding: 2em;
+    align-items: center;
+}
+
+.adoption-form input[type="text"],
+.adoption-form input[type="email"],
+.adoption-form textarea{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.adoption-form button{
+    padding: 1em;
+    background-color:darkslategrey;
+    color:aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*--------------Contact Page ----------------------*/
+
+.contact-body{
+    position: relative;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contact-container{
+    display: block;
+    max-width: 60%;
+    margin: auto;
+    padding: 2em;
+    background-color:gainsboro;
+    box-shadow: 0 0 10px #62c0ff5a;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+form h1{
+    text-align: center;
+    color:darkgreen;
+}
+
+.contact-form{
+    margin-bottom: 2em;
+}
+
+.contact-form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize:vertical;
+}
+
+.submit-btn{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+    background-color: darkslategrey;
+    color:beige;
+    border-radius: 4px;
+}
+
+.submit-btn:hover{
+    background-color:darkgoldenrod;
+}
+
+.contact-footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 1em;
+    color:aliceblue;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    /*header*/
+    .header-container{
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        font-size: 1em;
+        padding-bottom: 1.3em;
+    }
+
+    .buychicken-links{
+        text-align: center;
+    }
+
+    .buychicken-links a{
+        letter-spacing: 0.1em;
+        margin: 0.5em;
+    }
+
+    /*----content container------*/
+
+    .content-container{
+        position: relative;
+        grid-template-columns: 2fr;
+        margin: 1em;
+        padding: 0.5em;
+        position: relative;
+    }
+    
+    .content-container::before{
+        content:"";
+        background-image: url(/images/poultry-farming-with-farmer-cage-chicken-and-egg-farm-on-green-field-background-view-in-hand-drawn-cute-cartoon-template-illustration-vector.jpg);
+        background-size: contain;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        opacity: 0.1;
+    }
+    
+    .image{
+        display: none;
+    }
+
+    .content-container .content{
+        margin-right: 2em;
+        padding: 2em;
+    }
+}
+
+
+
+
+
